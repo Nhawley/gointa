@@ -65,7 +65,7 @@ class LogIn extends Component {
       // this._onValueChange(STORAGE_KEY, responseData.id_token)
       AsyncStorage.setItem('STORAGE_KEY', responseData.id_token)
       // console.log(responseData)
-      Actions.welcome()
+      Actions.tabbed()
       // this.goToWelcome()
     }).catch((error) => {
         alert('Incorrect Login');
@@ -76,7 +76,6 @@ class LogIn extends Component {
   }
 
   render() {
-    const goToWelcome = () => Actions.welcome({username: this.state.username})
 
     return (
       <View style={styles.container}>

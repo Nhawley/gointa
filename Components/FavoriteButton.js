@@ -29,7 +29,6 @@ class FavoriteButton extends Component {
   }
 
   render() {
-
     if (!this.state.favorite) {
       return (
 

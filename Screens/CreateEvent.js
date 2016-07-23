@@ -10,10 +10,10 @@ import {
   TouchableNativeFeedback,
   Picker,
   TouchableWithoutFeedback,
-    AsyncStorage,
-    Alert,
-    Image,
-    StatusBar
+  AsyncStorage,
+  Alert,
+  Image,
+  StatusBar
 } from 'react-native';
 
 import BasicSwitch from '../Components/Switch.js'
@@ -51,19 +51,6 @@ class CreateEvent extends Component {
     }
 
     buttonClicked() {
-        // fetch('http://10.0.3.2:8080', {
-        //   method: 'POST',
-        //   body: JSON.stringify({
-        //     eventName: this.state.eventName,
-        //     description: this.state.description,
-        //     tags: this.state.tags,
-        //     address: this.state.address,
-        //     location: this.state.location,
-        //     age: this.state.age,
-        //     homezip: this.state.homezip,
-        //     workzip: this.state.workzip
-        //   })
-        // });
         this.createEvent();
     }
 
@@ -87,7 +74,6 @@ class CreateEvent extends Component {
         })
             .then((response) => response.json())
             .then((responseData) => {
-                //Alert.alert('my token',JSON.stringify(responseData));
                 AsyncStorage.setItem('STORAGE_KEY', responseData.id_token);
                 Actions.welcome();
             }).catch((error) => {

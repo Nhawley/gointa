@@ -11,16 +11,23 @@ import {
   TouchableNativeFeedback,
   Dimensions,
   ScrollView,
+  AsyncStorage,
   StatusBar
 } from 'react-native';
 import { Router, Scene, Actions } from 'react-native-router-flux';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import Button from '../Components/Button';
 
 var moment = require('moment')
 
 
-class Search extends Component {
+class Profile extends Component {
 
+  logout() {
+    AsyncStorage.removeItem('STORAGE_KEY');
+    alert('You have been logged out.');
+    Actions.pop()
+  }
 
   render() {
 
@@ -67,6 +74,14 @@ class Search extends Component {
         <Text>homezip</Text>
         <Text>workzip</Text>
         <Text>friends</Text>*/}
+
+        <Button 
+          onPress={this.logout.bind(this)}
+          style={{width: windowWidth*.5}}
+        >
+          {"Log Out"}
+        </Button>
+
       </View>
     )
 
@@ -164,4 +179,5 @@ const styles = StyleSheet.create({
 });
 
 
-export default Search;
+export default Profile;
+

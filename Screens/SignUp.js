@@ -41,7 +41,7 @@ class SignUp extends Component {
         .then((responseData) => {
             //Alert.alert('my token',JSON.stringify(responseData));
             AsyncStorage.setItem('STORAGE_KEY', responseData.id_token);
-            Actions.welcome();
+            Actions.tabbed();
         }).catch((error) => {
             alert('Server Error Please Try Back Later');
     });

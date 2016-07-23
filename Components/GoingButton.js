@@ -8,6 +8,8 @@ import {
   TextInput,
   ListView,
   TouchableNativeFeedback,
+  TouchableOpacity,
+  Platform,
   Alert
 } from 'react-native';
 import { Router, Scene, Actions } from 'react-native-router-flux';
@@ -29,7 +31,7 @@ class GoingButton extends Component {
   }
 
   render() {
-
+  if (Platform.OS === 'android') {
     if (!this.state.going) {
       return (
         <TouchableNativeFeedback onPress={this.handleClick.bind(this)}>
@@ -51,6 +53,29 @@ class GoingButton extends Component {
         </View>
       </TouchableNativeFeedback>
     )
+  } else {
+    if (!this.state.going) {
+      return (
+        <TouchableOpacity onPress={this.handleClick.bind(this)}>
+          <View style={styles.notGoing}>
+            <Text style={styles.centeredText}>
+              Not Yet Going!
+            </Text>
+          </View>
+        </TouchableOpacity>
+      )
+    }
+
+    return (
+      <TouchableOpacity onPress={this.handleClick.bind(this)}>
+        <View style={styles.Going}>
+          <Text style={styles.centeredText}>
+            Going!
+          </Text>
+        </View>
+      </TouchableOpacity>
+    )
+  }
   }
 
 }

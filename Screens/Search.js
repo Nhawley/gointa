@@ -55,6 +55,15 @@ class Search extends Component {
     });
   }
 
+  search() {
+    var searchInfoObject = {
+      type: 'searchPage',
+      zipcode: this.state.zipcode,
+      distance: this.state.distance
+    };
+    Actions.searchresults({searchInfo: searchInfoObject});
+  }
+
   render() {
 
     return (
@@ -63,7 +72,7 @@ class Search extends Component {
         <StatusBar backgroundColor="#4ed7c2" />
         <View>
           <TextInput 
-            style={styles.input}
+            style={styles.inputZip}
             placeholder='Zipcode' 
             value={this.state.zipcode}
             onChangeText={(zipcode) => this.setState({ zipcode: zipcode })}
@@ -73,7 +82,7 @@ class Search extends Component {
           />
         </View>
 
-        <View>
+{/*        <View>
           <Select
             style={styles.input}
             width={windowWidth*.7}
@@ -89,7 +98,7 @@ class Search extends Component {
             <Option styleText={{textAlign: 'center'}}>Entertainment</Option>
             <Option styleText={{textAlign: 'center'}}>Sponsored</Option>
           </Select>
-        </View>
+        </View>*/}
         
         <View>
           <Select
@@ -100,15 +109,19 @@ class Search extends Component {
             optionListRef={this._getOptionList.bind(this)}
             defaultValue="Distance"
             onSelect={this._distance.bind(this)}>
-            <Option styleText={{textAlign: 'center'}}>5 miles</Option>
-            <Option styleText={{textAlign: 'center'}}>10 miles</Option>
-            <Option styleText={{textAlign: 'center'}}>15 miles</Option>
-            <Option styleText={{textAlign: 'center'}}>20 miles</Option>
-            <Option styleText={{textAlign: 'center'}}>25 miles</Option>
+            <Option styleText={{textAlign: 'center'}}>5</Option>
+            <Option styleText={{textAlign: 'center'}}>10</Option>
+            <Option styleText={{textAlign: 'center'}}>15</Option>
+            <Option styleText={{textAlign: 'center'}}>20</Option>
+            <Option styleText={{textAlign: 'center'}}>25</Option>
+            <Option styleText={{textAlign: 'center'}}>50</Option>
           </Select>
         </View>
 
-        <Button style={styles.button}>
+        <Button
+          onPress={this.search.bind(this)} 
+          style={styles.button}
+        >
           {"Search"}
         </Button>
         
@@ -129,10 +142,14 @@ const styles = StyleSheet.create({
     width: windowWidth*.70,
     backgroundColor: '#c0cac9',
     margin: 10,
-    // fontFamily: 'Roboto',
-    // fontWeight: '100',
-    // justifyContent: 'center',
-    // textAlign: 'center',
+    opacity: .5
+  },
+  inputZip: {
+    height: 40,
+    width: windowWidth*.70,
+    backgroundColor: '#c0cac9',
+    margin: 10,
+    textAlign: 'center',
     opacity: .5
   },
   button: {

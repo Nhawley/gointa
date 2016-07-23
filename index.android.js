@@ -55,8 +55,8 @@ class FinalProject extends Component {
     return (
       <Router navigationBarStyle={styles.navBar} backButtonTextStyle={styles.backButton}>
         <Scene key="root">
-          <Scene key="pageOne" component={PageOne} title="Welcome!" initial={true} />
-          <Scene key="login" direction="vertical" component={LogIn} title="Log In!" />
+          <Scene key="pageOne" component={PageOne} title="Welcome!" />
+          <Scene key="login" direction="vertical" component={LogIn} initial={true} title="Log In!" />
           <Scene key="signup" component={SignUp} title="Sign Up!" />
           <Scene key="welcome" component={LoggedIn} title="Welcome!" />
 
