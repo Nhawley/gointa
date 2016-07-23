@@ -1,0 +1,22 @@
+dependencies: \
+  /RutgersWork/gointa/node_modules/react-native/React/Executors/RCTJSCExecutor.mm \
+  /RutgersWork/gointa/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTDefines.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTAssert.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTBridge.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Modules/RCTDevMenu.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTLog.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTUtils.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Profiler/RCTJSCProfiler.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Modules/RCTRedBox.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Modules/RCTSourceCode.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Executors/RCTJSCWrapper.h

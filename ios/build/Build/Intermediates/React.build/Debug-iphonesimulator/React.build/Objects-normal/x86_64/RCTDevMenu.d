@@ -1,0 +1,21 @@
+dependencies: \
+  /RutgersWork/gointa/node_modules/react-native/React/Modules/RCTDevMenu.m \
+  /RutgersWork/gointa/node_modules/react-native/React/Modules/RCTDevMenu.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTBridge.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTDefines.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTAssert.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTKeyCommands.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTLog.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTRootView.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Modules/RCTSourceCode.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTUtils.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTWebSocketProxy.h \
+  /RutgersWork/gointa/node_modules/react-native/React/Base/RCTWebSocketProxyDelegate.h
